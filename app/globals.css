@@ -24,5 +24,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-swiss911), var(--font-optispire), sans-serif;
+}
+
+.font-swiss911 {
+  font-family: var(--font-swiss911), sans-serif;
+}
+
+.font-optispire {
+  font-family: var(--font-optispire), sans-serif;
+}
+
+.font-hairline {
+  font-weight: 100;
 }
