@@ -19,18 +19,10 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-center">
       <h1 className="font-swiss911 mb-4 text-3xl">I AM MUSIC GENERATOR</h1>
 
-      {/* Album Cover */}
       <div
         id="cover"
         className="relative inline-flex h-[400px] w-[400px] items-center justify-center border-2 bg-white shadow-lg"
       >
-        {/* <span className="font-optispire background-text font-hairline absolute text-6xl">
-          {inputText.toUpperCase()}
-        </span>
-
-        <span className="font-swiss911 font-hairline foreground-text text-6xl">
-          {inputText.toUpperCase()}
-        </span> */}
         {inputText.split("").map((char, index) => (
           <div key={index} className="relative mr-3">
             <span className="font-optispire absolute top-[48%] left-1/2 origin-center -translate-x-1/2 -translate-y-1/2 scale-x-[2.4] scale-y-[2.2] text-5xl leading-1 font-light">
@@ -53,7 +45,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Input Field */}
       <input
         type="text"
         maxLength={20}
@@ -63,7 +54,6 @@ export default function Home() {
         value={inputText}
       />
 
-      {/* Save Button */}
       <button
         className="mt-4 rounded-sm bg-black px-4 py-2 text-white"
         onClick={downloadImage}
